@@ -23,4 +23,5 @@ Neither feed reports P&L, so it is worked out from the orders the traders post.
 ## Disclaimer
 
 These are unofficial numbers, worked out automatically from public posts. They may be incomplete
-or wrong, and they are not financial advice. No affiliation with tastylive or Lossdog.
+or wrong, and they are not financial advice. No affiliation with tastylive or Lossdog. Read the
+full [disclaimer](DISCLAIMER.md) before relying on anything here.
