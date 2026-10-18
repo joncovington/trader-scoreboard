@@ -12,6 +12,8 @@ here is an estimate. It can be incomplete or wrong because of:
 - fees and commissions, which are not included
 - expired options settled at the day's closing price, which ignores early assignment and
   after-hours moves
+- unrealized P&L at the market marks of the last update, which move constantly and can be
+  wide of a real fill on illiquid options
 - the scoring rules described in the [README](README.md)
 
 **Not anyone's real account.** These are not brokerage statements. They do not show what any trader

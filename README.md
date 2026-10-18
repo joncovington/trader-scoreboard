@@ -15,6 +15,8 @@ Neither feed reports P&L, so it is worked out from the orders the traders post.
   position. Its P&L is the sum of their net cash once every leg is closed.
 - **tastylive** is in actual dollars, at the trader's own size.
 - **Lossdog** is per one unit, because its feed publishes no position size.
+- **Realized** P&L is closed positions only. **Unrealized** is open positions at current market
+  marks: the cash so far plus what the legs are worth now. **Total** is the two together.
 - **untrk** counts closes of positions opened before tracking began. They are counted but never
   priced.
 - **Expired options** that had no closing order are settled at their intrinsic value, using the
