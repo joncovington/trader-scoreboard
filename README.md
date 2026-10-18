@@ -20,10 +20,10 @@ Neither feed reports P&L, so it is worked out from the orders the traders post.
 - **untrk** counts closes of positions opened before tracking began. They are counted but never
   priced.
 - **Expired options** that had no closing order are settled at their intrinsic value, using the
-  underlying's closing price on the expiry date. The settlement shows as its own order in the
-  trade history.
-- **open** includes the few expired options that can't be settled that way yet: futures options
-  and AM-settled index options. They stay out of P&L.
+  underlying's closing price on the expiry date (for a futures option, its futures contract's
+  close). The settlement shows as its own order in the trade history.
+- **Open** includes the rare expired option that settles on a morning opening print instead
+  (SPX monthlies, quarterly index futures options). It stays out of P&L.
 
 ## Disclaimer
 
