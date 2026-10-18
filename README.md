@@ -1,7 +1,7 @@
 # Trader Scoreboard
 
 Weekly P&L results for the traders on two public trade feeds: the tastylive Follow Feed and
-Lossdog VIP. Updated every Saturday morning.
+Lossdog VIP. The page updates every night; a dated report is added every Saturday morning.
 
 - **Live page:** https://joncovington.github.io/trader-scoreboard/ shows both boards with a 7-day,
   30-day and all-time switch. Click a trader to see their trade history.
@@ -17,8 +17,11 @@ Neither feed reports P&L, so it is worked out from the orders the traders post.
 - **Lossdog** is per one unit, because its feed publishes no position size.
 - **untrk** counts closes of positions opened before tracking began. They are counted but never
   priced.
-- **open** includes options that expired without a closing order. They stay out of P&L until
-  settlement prices are known.
+- **Expired options** that had no closing order are settled at their intrinsic value, using the
+  underlying's closing price on the expiry date. The settlement shows as its own order in the
+  trade history.
+- **open** includes the few expired options that can't be settled that way yet: futures options
+  and AM-settled index options. They stay out of P&L.
 
 ## Disclaimer
 
